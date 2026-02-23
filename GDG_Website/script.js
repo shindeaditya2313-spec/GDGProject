@@ -3,7 +3,7 @@
 // Get it from: Extensions → Apps Script → Deploy → New deployment → Web app
 const CONFIG = {
   GOOGLE_APPS_SCRIPT_URL: "https://script.google.com/macros/d/{YOUR_DEPLOYMENT_ID}/usercontent/exec",
-  OWNER_EMAIL: "adityacsmu007@gmail.com"
+  OWNER_EMAIL: "email ID "
 };
 
 const form = document.getElementById("registrationForm");
@@ -47,4 +47,5 @@ form.addEventListener("submit", async function (e) {
     successMessage.innerText = "❌ Server Error: " + error.message;
     successMessage.style.color = "red";
   }
+
 });
