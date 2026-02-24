@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://127.0.0.1:5500",
-    "https://YOUR-NETLIFY-LINK.netlify.app"
+    "https://registrationsforgdg.netlify.app"
   ],
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
@@ -58,4 +58,5 @@ app.post("/register", async (req, res) => {
 // Server Start
 app.listen(process.env.PORT, () => {
   console.log(`🚀 Server running on http://localhost:${process.env.PORT}`);
+
 });
