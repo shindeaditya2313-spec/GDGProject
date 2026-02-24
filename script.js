@@ -16,7 +16,7 @@ event: document.getElementById("event").value
 
 try {
 
-const res = await fetch("http://localhost:5000/register", {
+const res = await fetch("https://registrationsforgdg.netlify.app/register", {
 method: "POST",
 headers: { "Content-Type": "application/json" },
 body: JSON.stringify(data)
@@ -32,5 +32,6 @@ form.reset();
 successMessage.innerText = "❌ Server Error!";
 
 }
+
 
 });
